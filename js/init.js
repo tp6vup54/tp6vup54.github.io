@@ -28,7 +28,7 @@ $(document).ready(function() {
       var $group = $('.' + $group_name.attr("value"));
       // expand
       if ($group.is(":visible")) {
-          $group.hide(100);
+          $group.hide("slow");
           $group_name.toggleClass("rotate");
       }
       // collapse
