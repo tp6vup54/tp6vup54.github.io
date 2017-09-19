@@ -1,55 +1,390 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Sean Chen</title>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
- 	<script type="text/javascript" src="script.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
- 	<link href='main.css' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<div class="main">
-	<section class="page1">
-  	    <img src="media/head.jpg" width="200" height="200">
-        <div class="page_container">
-          <h1>Hello, there!</h1>
-          <h2>I'm Sean, this is my résumé.</h2>
-          <!--div class="btns">
-            <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a-->
-          </div>
-        </div>
-      </section>
-	    
-	    <section class="page2">
-	      <div class="page_container">
-          <h1>Ready-to-use plugin</h1>
-          <h2>All you need is an HTML markup, call the script and BAM!</h2>
-          <code class="html">
-  	        &lt;div class="main"&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          ...<br>
-  	        &lt;/div&gt;
-  	      </code>
-  	      
-  	      <code class="js">
-	          $(".main").onepage_scroll();
-	        </code>
-	      </div>
-      </section>
-	    
-	    <section class="page3">
-	      <div class="page_container">
-          <h1>Pretty Neat Eh?</h1>
-          <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
-          <div class="btns">
-  	        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
-  	      </div>
-  	    </div>
-      </section>
-	</div>
-</body>
-</html>
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        
+        <!-- TITLE OF SITE-->
+        <title> Sean Chen </title>
+        
+        <!-- META TAG -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CV, Portfolio, Resume">
+        <meta name="author" content="Md. Siful Islam, Desiver Web">
+        
+        <!-- FAVICON -->
+        <link rel="icon" href="http://demo.deviserweb.com/cv/assets/images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="72x72" href="http://demo.deviserweb.com/cv/assets/images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="http://demo.deviserweb.com/cv/assets/images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="http://demo.deviserweb.com/cv/assets/images/apple-icon-114x114.png">
+
+        <!-- ========================================
+                Stylesheets
+        ==========================================--> 
+        
+        <!-- MATERIALIZE CORE CSS -->
+        <link rel="stylesheet" href="css/materialize.css">
+        
+
+        <!-- ADDITIONAL CSS -->
+        <link rel="stylesheet" href="css/animate.css">
+        
+
+        <!-- FONTS -->
+        <link href="css/css.css" rel="stylesheet" type="text/css">
+        
+
+        <!--FONTAWESOME CSS-->
+        <!-- <link href="css/font-awesome.css" rel="stylesheet" type="text/css">  -->
+        
+
+        <!-- CUSTOM STYLE -->
+        <link href="css/style.css" rel="stylesheet">
+        
+
+        <!-- RESPONSIVE CSS-->
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <!-- COLORS -->        
+        <link rel="alternate stylesheet" href="css/red.css" title="red">
+        <link rel="alternate stylesheet" href="css/purple.css" title="purple">
+        <link rel="alternate stylesheet" href="css/orange.css" title="orange">
+        <link rel="alternate stylesheet" href="css/green.css" title="green">
+        <link rel="stylesheet" href="css/lime.css" title="lime">
+
+        
+        <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+        <link rel="stylesheet" href="css/demo.css">
+
+        <script src="https://use.fontawesome.com/460f115909.js"></script>
+
+        
+        <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif] -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        
+    <script type="text/javascript" charset="UTF-8" src="js/common.js"></script><script type="text/javascript" charset="UTF-8" src="js/util.js"></script><script type="text/javascript" charset="UTF-8" src="js/stats.js"></script></head>
+    <body>
+        <!-- Start Container-->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+            <!-- =========================================
+                           SIDEBAR   
+            ==========================================-->
+                <!-- Start Sidebar -->
+                <aside class="col l4 m12 s12 sidebar z-depth-1" id="sidebar">
+                    <!--  Sidebar row -->
+                    <div class="row">                      
+                        <!--  top section   -->
+                        <div class="heading">                            
+                            <!-- ====================
+                                      IMAGE   
+                            ==========================-->
+                            <div class="feature-img">
+                                <img src="media/profile-img.jpg" class="responsive-img" alt="">
+                            </div>                            
+                            <!-- ========================================
+                                       NAME AND TAGLINE
+                            ==========================================-->
+                            <div class="title col s12 m12 l9 right  wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">   
+                                <h2>Sean Chen</h2> <!-- title name -->
+                                <span>Software Engineer</span>  <!-- tagline -->
+                            </div>                         
+                        </div>
+                         <!-- sidebar info -->
+                        <div class="col l12 m12 s12 sort-info sidebar-item">
+                            <div class="row">                               
+                                <div class="col m12 s12 l3 icon"> <!-- icon -->
+                                   <i class="fa fa-user fa-lg"></i>
+                                </div>                                
+                                <div class="col m12 s12 l9 info wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"> <!-- text -->
+                                    <div class="section-item-details">
+                                        <p>I'm with the experience of 6 years in software programming since 2008, 2 years in Linux system server management since 2012, and 1 year in android and embedded systems development since 2013.
+In 2010, I started to contact with open source projects, and be a user and promoter. Then in 2013, I tried to hold a project with friends in github and be a committer.<br>I'm a person who agrees with the concept of open source, and full of passion in learning various knowledges.</p>
+                                    </div>             
+                                </div>
+                            </div>         
+                        </div>
+                        <!-- MOBILE NUMBER -->
+                        <div class="col l12 m12 s12  mobile sidebar-item">
+                            <div class="row">                                
+                                <div class="col m12 s12 l3 icon">
+                                    <i class="fa fa-phone fa-lg"></i> <!-- icon -->
+                                </div>                                
+                                <div class="col m12 s12 l9 info wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                    <div class="section-item-details">
+                                        <div class="personal">
+                                            <h4>0912070314</h4> <!-- Number -->             
+                                            <span>mobile</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>             
+                        </div>
+                        <!-- EMAIL -->
+                        <div class="col l12 m12 s12  mobile sidebar-item">
+                            <div class="row">                                
+                                <div class="col m12 s12 l3 icon">
+                                    <i class="fa fa-envelope fa-lg"></i> <!-- icon -->
+                                </div>                                
+                                <div class="col m12 s12 l9 info wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                    <div class="section-item-details">
+                                        <div class="personal">                                    
+                                            <h4>genius091612@gmail.com</h4> <!-- Email -->
+                                            <span>email</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>             
+                        </div>
+                        <!-- ADDRESS  -->
+                        <div class="col l12 m12 s12  address sidebar-item ">
+                            <div class="row">                                
+                                <div class="col l3 m12  s12 icon">
+                                    <i class="fa fa-home fa-lg"></i> <!-- icon -->
+                                </div>                                
+                                <div class="col m12 s12 l9 info wow fadeIn a4 animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                                    <div class="section-item-details">
+                                        <div class="address-details"> <!-- address  -->
+                                            <h4>新北市板橋區</h4> 
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>            
+                        </div>
+                        <!-- PROGRAMMING LANGUAGES -->
+                        <div class="col l12 m12 s12  skills sidebar-item">
+                            <div class="row">
+                                <div class="col m12 l3 s12 icon">
+                                    <i class="fa fa-code"></i> <!-- icon -->
+                                </div>
+                                 <!-- Programming Languages -->
+                                <div class="col m12 l9 s12 skill-line a5 wow fadeIn animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                    <h3>Programming Languages </h3>
+
+                                    <span>Javascript</span>
+                                    <div class="progress">
+                                        <div class="determinate">50%</div>
+                                    </div>
+
+                                    <span>C</span>
+                                    <div class="progress">
+                                        <div class="determinate">30%</div>
+                                    </div>
+
+                                    <span>C++</span>
+                                    <div class="progress">
+                                        <div class="determinate">60%</div>
+                                    </div>
+                                    
+                                    <span>C#</span>
+                                    <div class="progress">
+                                        <div class="determinate">70%</div>
+                                    </div>
+
+                                    <span>Python</span>
+                                    <div class="progress">
+                                        <div class="determinate">90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ADDITIONAL SKILLS -->
+                        <div class="col l12 m12 s12  skills sidebar-item">
+                            <div class="row">
+                                <div class="col m12 l3 s12 icon">
+                                    <i class="fa fa-calendar-o"></i> <!-- icon -->
+                                </div>
+                                 <!-- Additional Skills -->
+                                <div class="col m12 l9 s12 info skill-line a5 wow fadeIn animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                    <h3>Additional Skills </h3>
+                                    
+                                    <span>Android</span>                                    
+                                    <div class="progress">
+                                        <div class="determinate">90%</div>
+                                    </div>
+                                    
+                                    <span>Qt/PyQt</span>
+                                    <div class="progress">
+                                        <div class="determinate">90%</div>
+                                    </div>
+
+                                    <span>Selenium</span>
+                                    <div class="progress">
+                                        <div class="determinate">90%</div>
+                                    </div>
+                                    
+                                    <span>Flask</span>
+                                    <div class="progress">
+                                        <div class="determinate">90%</div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SITES  -->
+                        <div class="col l12 m12 s12  address sidebar-item ">
+                            <div class="row">                                
+                                <div class="col l3 m12  s12 icon">
+                                    <i class="fa fa-link fa-lg"></i> <!-- icon -->
+                                </div>                                
+                                <div class="col m12 s12 l9 wow fadeIn a4 animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn; padding-left: 0px;">
+                                    <div class="section-item-details">
+                                        <div class="col icon">
+                                            <a target="_blank" href="https://github.com/tp6vup54"> <!-- github -->
+                                                <i class="fa fa-github fa-lg"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col icon">
+                                            <a target="_blank" href="https://www.linkedin.com/in/sean-chen-110b9278/"> <!-- linkedin -->
+                                                <i class="fa fa-linkedin-square fa-lg"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>            
+                        </div>
+                    </div>   <!-- end row -->
+                </aside><!-- end sidebar -->
+
+                <!-- =========================================
+                   Work experiences
+                ==========================================-->
+
+                <section class="col s12 m12 l8 section">
+                    <div class="row">
+                        <div class="section-wrapper z-depth-1">                            
+                            <div class="section-icon col s12 m12 l2">
+                                <i class="fa fa-suitcase"></i>
+                            </div>
+                            <div class="custom-content col s12 m12 l10 wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                <h2>Work Experience</h2>
+
+                                <div class="custom-content-wrapper wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                    <h3>QA Engineer <span>@TrendMicro</span></h3>
+                                    <span>MAR 2016 - Present</span>
+                                    <p>TMCM, Trend Micro Control Manager, Selenium, Automated testing, Azure </p>
+                                </div>
+                                <div class="custom-content-wrapper wow fadeIn a3 animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                    <h3>R&D Engineer <span>@CyberLink</span></h3>
+                                    <span>SEP 2015 - MAR 2016 </span>
+                                    <p>Core tech Dept., Muxer, Demuxer, Python UI </p>
+                                </div>
+                                <div class="custom-content-wrapper wow fadeIn a4 animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                                    <h3>Intern <span>@ADLINK Technology </span></h3>
+                                    <span>JUN 2013 - JUN 2014 </span>
+                                    <p>Lead an industry-university cooperative research project.<br>Develop an O.S.-independent capture/replay test automation system which is patented. </p>
+                                </div>
+                                <div class="custom-content-wrapper wow fadeIn a5 animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                    <h3>Intern <span>@NEXCOM International</span></h3>
+                                    <span>JUL 2011 - AUG 2011 </span>
+                                    <p>In charge of the testing of Industrial PC controlling system. Working as a QA engineer. </p>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <!-- ========================================
+                         Education 
+                        ==========================================-->
+
+                        <div class="section-wrapper z-depth-1">
+                            <div class="section-icon col s12 m12 l2">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="custom-content col s12 m12 l10 wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                <h2>Education </h2>
+                                
+                                <div class="custom-content-wrapper wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                    <h3>Master's degree, Software Engineering <span>@National Central University</span></h3>
+                                    <span>SEP 2012 - AUG 2014 </span>
+                                    <p>Korat: An O.S.-independent Capture/Replay Test Automation System<br>
+                                    Open Source Contribution: ToS_Bot: An android-based auto-battle bot for Tower of Savior (神魔之塔) </p>
+                                </div>
+                                <div class="custom-content-wrapper wow fadeIn a3 animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                    <h3>Bachelor's degree, Computer Science <span>@National Taipei University of Technology</span></h3>
+                                    <span>SEP 2009 - JUN 2012 </span>
+                                    <p> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========================================
+                         Work Accomplishments 
+                        ==========================================-->
+
+                        <div class="section-wrapper z-depth-1">
+                            <div class="section-icon col s12 m12 l2">
+                                <i class="fa fa-desktop"></i>
+                            </div>
+                            <div class="custom-content col s12 m12 l10 wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                <h2>Work Accomplishments </h2>
+                                
+                                <div class="custom-content-wrapper wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                    <h3>Trend Micro Control Manager <span>@TrendMicro</span><div class="fa fa-angle-down btn-work" value="work-1"></div></h3>
+                                    <span>MAR 2016 - Present </span>
+                                    <div class="project work-1"><p>Control Manager is a solution that provides business customers centrally manage their Trend Micro products. 
+                                        It is a client-side server, and provides a web console for central management. 
+                                        It supports viewing all the endpoints' status in a company, even cross continents, 
+                                        and contains multiple features to ensure precisely management, such as log collecting, sending notifications, 
+                                        and managing updates of servers under management. </p>
+                                        <a target="_blank" class="project-link" href="http://apac.trendmicro.com/apac/enterprise/security-management/control-manager/index.html">See Project</a>
+                                        <br><br>
+                                    </div>
+                                </div>
+                                <div class="custom-content-wrapper wow fadeIn a3 animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                    <h3>U Webinar <span>@CyberLink</span><div class="fa fa-angle-down btn-work" value="work-2"></div></h3>
+                                    <span>SEP 2015 - MAR 2016 </span>
+                                    <div class="project work-2"><p>U Webinar is a broadcasting tool for presentation. 
+                                        It supports live presentation with camera, presentation recording and edit video slices. </p>
+                                        <a target="_blank" class="project-link" href="https://u.cyberlink.com/products/uwebinar">See Project</a>
+                                        <br><br>
+                                    </div>
+                                </div>
+                                <div class="custom-content-wrapper wow fadeIn a4 animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                                        <h3>Korat <span>@ADLink</span><div class="fa fa-angle-down btn-work" value="work-3"></div></h3>
+                                        <span>JUN 2013 - JUN 2014 </span>
+                                        <div class="project work-3"><p>Korat is an C#-based O.S.-independent capture/replay test automation system. 
+                                            This project is originated from an industry-university cooperative research project between NCU and ADLINK, and it's already patented. 
+                                            In order to communicate with IPC motherboard, some embedded techniques were adopted.<br>
+                                            Actually, at time of writing, the project is still ongoing, but since graduated from NCU, I'm not in charge of it anymore. </p>
+                                            <a target="_blank" class="project-link" href="http://ieeexplore.ieee.org/document/7336319/">See Project</a>
+                                            <br><br>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+                </section><!-- end section -->
+            </div> <!-- end row -->
+        </div>  <!-- end container -->
+        
+ <!--=====================
+                JavaScript
+        ===================== -->
+        <!-- Jquery core js-->
+        <script src="js/jquery.js"></script>
+        
+        <!-- materialize js-->
+        <script src="js/materialize.js"></script>
+        
+        <!-- wow js-->
+        <script src="js/wow.js"></script>
+        
+        <!-- Map api -->
+        <script src="js/js"></script>
+        
+        <!-- Masonry js-->
+        <script src="js/masonry.js"></script>
+
+        <script src="js/validator.js"></script>
+        
+        <!-- Customized js -->
+        <script src="js/init.js"></script>
+<div class="hiddendiv common"></div><div class="drag-target" style="left: 0px; touch-action: pan-y;"></div><div class="material-tooltip" style="display: none; left: 922.15px; top: 1213px; opacity: 0; margin-top: 0px; margin-left: 0px;"><span>Photography</span><div class="backdrop" style="top: 0px; left: 0px; border-radius: 14px 14px 0px 0px; transform-origin: 50% 90% 0px; margin-top: 36px; margin-left: 43.5px; display: none; opacity: 0; transform: scale(1);"></div></div><div class="material-tooltip" style="opacity: 0; margin-top: 0px; margin-left: 0px; display: none; left: 1066.03px; top: 1213px;"><span>Drinking</span><div class="backdrop" style="top: 0px; left: 0px; opacity: 0; transform: scale(1); display: none; border-radius: 14px 14px 0px 0px; transform-origin: 50% 90% 0px; margin-top: 36px; margin-left: 28.5px;"></div></div><div class="material-tooltip" style="opacity: 0; margin-top: 0px; margin-left: 0px; display: none; left: 1201.92px; top: 1213px;"><span>Music</span><div class="backdrop" style="top: 0px; left: 0px; opacity: 0; transform: scale(1); display: none; border-radius: 14px 14px 0px 0px; transform-origin: 50% 90% 0px; margin-top: 36px; margin-left: 21.5px;"></div></div><div class="material-tooltip" style="opacity: 0; margin-top: 0px; margin-left: 0px; display: none;"><span>Chatting</span><div class="backdrop" style="top: 0px; left: 0px; opacity: 0; transform: scale(1); display: none;"></div></div><div class="material-tooltip"><span>Coffee</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div></body></html>
