@@ -1,11 +1,5 @@
 $(document).ready(function() {
     "use strict";
-
-    /***************************************************************************/
-            /* NAVIGATION  */
-    /***************************************************************************/
-   
-      $('.button-collapse').sideNav();
  
     /**************************************************************************
                  SKILL BAR 
@@ -17,47 +11,6 @@ $(document).ready(function() {
         .empty()
         .append('<i class="fa fa-circle"></i>');                
     });
-
-
-    /**************************************************************************
-            Style demo
-    **************************************************************************/
-   
-    $('.cv-style-switch').click(function(){
-        if($(this).hasClass('open')){
-          $(this).removeClass('open');
-          $('#switch-style').animate({'right':'0'});
-        }else{
-          $(this).addClass('open');
-          $('#switch-style').animate({'right':'-300'});
-        }
-    });
-
-  
-    /**************************************************************************
-             BLOG POST 
-    **************************************************************************/
-  
-    jQuery(window).on('load', function(){ var $ = jQuery;
-        $('.blog').masonry({
-          itemSelector: '.blog-post',
-          columnWidth: '.blog-post',
-          percentPosition: true
-        });
-    });
-
-
-    var height = $('.caption').height();
-        if($(window).width()){
-          $('#featured').css('height', height);   
-          $('#featured img').css('height', height);   
-        }
-
-
-    /*************************************************************************
-                TOOLTIP
-    **************************************************************************/
-    $('.tooltipped').tooltip({delay: 50});
 
     /**************************************************************************
         WOW INIT
@@ -77,7 +30,6 @@ $(document).ready(function() {
       if ($group.is(":visible")) {
           $group.hide(100);
           $group_name.toggleClass("rotate");
-          
       }
       // collapse
       else {
