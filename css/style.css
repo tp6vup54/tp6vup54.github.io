@@ -9,6 +9,7 @@ p {
   font-weight: 300;
   font-size: 10pt;
   line-height: 17pt;
+  text-align: justify;
 }
 a {
   color: #ffffff;
