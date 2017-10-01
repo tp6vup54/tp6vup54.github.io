@@ -424,3 +424,13 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .text-success {
   color: #5da4d9 ;
 }
+.lang-switch {
+  font-size: 20pt;
+  font-family: 'Noto Sans TC', sans-serif;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.lang-switch:hover {
+  cursor: pointer;
+  color: #6AB4E9;
+}
