@@ -1,11 +1,14 @@
 * {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.zh-tw {
+  font-family: 'Noto Sans TC';
 }
 .fix {
   overflow: hidden;
 }
 p {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 300;
   font-size: 10pt;
   line-height: 17pt;
@@ -55,7 +58,7 @@ a:hover {
 /* style for Typography */
 h2,
 h3 {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 500;
 }
 h2 {

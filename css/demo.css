@@ -1,4 +1,4 @@
-.cv-style-switch {
+.cv-language-switch {
     opacity: 0.95;
     position: fixed;
     z-index: 9999;
@@ -7,16 +7,16 @@
     background: #FFFFFF;
 }
 
-.cv-style-switch a,
-.cv-style-switch a:hover{
+.cv-language-switch a,
+.cv-language-switch a:hover{
     display: block;
 }
 
-.cv-style-switch:hover {
+.cv-language-switch:hover {
     opacity: 1 !important;
 }
 
-.cv-style-switch .switched-options {
+.cv-language-switch .switched-options {
     position: relative;
     width: 300px;
     text-align: left;
@@ -25,7 +25,7 @@
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
-.cv-style-switch .config-title {
+.cv-language-switch .config-title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
@@ -35,88 +35,88 @@
     margin-bottom: 5px;
 }
 
-.cv-style-switch ul {
+.cv-language-switch ul {
     margin-bottom: 25px;
 }
 
-.cv-style-switch ul .active a {
+.cv-language-switch ul .active a {
     color: #005885;
     font-weight: 700;
 }
 
-.cv-style-switch ul .p {
+.cv-language-switch ul .p {
     font-weight: 400;
     font-size: 12px;
     color: #CCC;
     margin-top: 10px;
 }
 
-.cv-style-switch ul li a {
+.cv-language-switch ul li a {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: #808080;
 }
 
-.cv-style-switch ul li a:hover {
+.cv-language-switch ul li a:hover {
     color: #008ed6;
 }
 
-.cv-style-switch ul.styles {
+.cv-language-switch ul.languages {
     margin-top: 15px;
 }
 
-.cv-style-switch ul.styles li {
+.cv-language-switch ul.languages li {
     display: inline-block;
     margin-right: 5px;
 }
 
-.cv-style-switch ul.styles li .lime,
-.cv-style-switch ul.styles li .red,
-.cv-style-switch ul.styles li .coral-red,
-.cv-style-switch ul.styles li .purple,
-.cv-style-switch ul.styles li .blue,
-.cv-style-switch ul.styles li .orange,
-.cv-style-switch ul.styles li .green,
-.cv-style-switch ul.styles li .pink,
-.cv-style-switch ul.styles li .bottle {
+.cv-language-switch ul.languages li .lime,
+.cv-language-switch ul.languages li .red,
+.cv-language-switch ul.languages li .coral-red,
+.cv-language-switch ul.languages li .purple,
+.cv-language-switch ul.languages li .blue,
+.cv-language-switch ul.languages li .orange,
+.cv-language-switch ul.languages li .green,
+.cv-language-switch ul.languages li .pink,
+.cv-language-switch ul.languages li .bottle {
     width: 26px;
     height: 26px;
 }
 
-.cv-style-switch ul.styles li .lime {
+.cv-language-switch ul.styles li .lime {
     background: #5da4d9 !important;
 }
 
-.cv-style-switch ul.styles li .red {
+.cv-language-switch ul.styles li .red {
     background: #e74c3c;
 }
 
-.cv-style-switch ul.styles li .coral-red {
+.cv-language-switch ul.styles li .coral-red {
     background: #FE4444;
 }
 
-.cv-style-switch ul.styles li .purple {
+.cv-language-switch ul.styles li .purple {
     background: #673ab7;
 }
 
-.cv-style-switch ul.styles li .blue {
+.cv-language-switch ul.styles li .blue {
     background: #5da4d9;
 }
 
-.cv-style-switch ul.styles li .orange {
+.cv-language-switch ul.styles li .orange {
     background: #e67e22;
 }
 
-.cv-style-switch ul.styles li .green {
+.cv-language-switch ul.styles li .green {
     background: #1abc9c;
 }
 
-.cv-style-switch ul.styles li .bottle {
+.cv-language-switch ul.styles li .bottle {
     background: #2AA09B;
 }
 
-.cv-style-switch .switch-button {
+.cv-language-switch .switch-button {
     opacity: 1 !important;
     background: #FFF;
     padding: 10px;
@@ -124,13 +124,13 @@
     color: #272727;
     position: absolute;
     overflow: hidden;
-    left: -44px;
+    left: -66px;
     top: 0px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
 
-.cv-style-switch .switch-button:hover {
+.cv-language-switch .switch-button:hover {
     color: #008ed6;
     cursor: pointer;
     text-decoration: none;

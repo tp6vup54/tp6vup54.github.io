@@ -25,7 +25,7 @@ $(document).ready(function() {
     
     $("div.btn-work").click(function () {
       var $group_name = $(this);
-      var $group = $('.' + $group_name.attr("value"));
+      var $group = $($group_name.attr("value"));
       // expand
       if ($group.is(":visible")) {
           $group.hide("slow");
@@ -36,6 +36,20 @@ $(document).ready(function() {
           $group.show("slow");
           $group_name.toggleClass("rotate");
       }
+    });
+
+    /**************************************************************************
+            Style language
+    **************************************************************************/
+
+    $('.cv-language-switch').click(function(){
+        if($(this).hasClass('open')){
+          $(this).removeClass('open');
+          $('#switch-language').animate({'right':'0'});
+        }else{
+          $(this).addClass('open');
+          $('#switch-language').animate({'right':'-300'});
+        }
     });
 
 });
