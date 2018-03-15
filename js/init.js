@@ -26,16 +26,19 @@ $(document).ready(function() {
     $("div.btn-work").click(function () {
       var $group_name = $(this);
       var $group = $($group_name.attr("value"));
+
       // expand
       if ($group.is(":visible")) {
           $group.hide("slow");
-          $group_name.toggleClass("rotate");
       }
       // collapse
       else {
           $group.show("slow");
-          $group_name.toggleClass("rotate");
       }
+      var sub = $group_name.attr("value").slice(0, $group_name.attr("value").lastIndexOf("."));
+      $("div.btn-work[value*='" + sub + "']").each( function() {
+          $(this).toggleClass("rotate");
+      });
     });
 
     /**************************************************************************
